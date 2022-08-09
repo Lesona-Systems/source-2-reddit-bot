@@ -7,7 +7,7 @@ def email_alert(mail_content):
     #The mail addresses and password
     sender_address = p.get_user_email()
     sender_pass = p.get_gmail_app_pass()
-    receiver_address = 'nejwritings@gmail.com'
+    receiver_address = p.get_user_email()
 
     #Setup the MIME
     message = MIMEMultipart()
