@@ -34,15 +34,15 @@ Create the application as follows:
 
 Once the bot has been registered, create a `secrets.ini` file in the project root or rename `secrets.example.ini` to `secrets.ini`.
 
-Under '[reddit]' in secrets.ini, enter the following information:
+Under `[reddit]` in secrets.ini, enter the following information:
 
-'client_id = [client_id]' - located under 'personal use script'
-
-
-client_secret = [client_secret]
+`client_id = [client_id]` - located under `personal use script`
 
 
-user_agent = [user_agent] - manually define `user_agent' using the Reddit application documentation:
+`client_secret = [client_secret]`
+
+
+user_agent = [user_agent] - manually define `user_agent` using the Reddit application documentation:
 
 Example:
 ``` <platform>:<app ID>:<version string> (by /u/<reddit username>)```
