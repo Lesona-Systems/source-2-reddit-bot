@@ -42,7 +42,7 @@ Under `[reddit]` in secrets.ini, enter the following information:
 `client_secret = [client_secret]`
 
 
-user_agent = [user_agent] - manually define `user_agent` using the Reddit application documentation:
+`user_agent = [user_agent]` - manually define `user_agent` using the Reddit application documentation:
 
 Example:
 ``` <platform>:<app ID>:<version string> (by /u/<reddit username>)```
