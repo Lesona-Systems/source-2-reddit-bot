@@ -4,3 +4,5 @@ secrets.ini
 /venv
 /__pycahche__
 *.cpython-310.pyc
+
+README.md
