@@ -37,7 +37,11 @@ Once the bot has been registered, create a `secrets.ini` file in the project roo
 Under '[reddit]' in secrets.ini, enter the following information:
 
 'client_id = [client_id]' - located under 'personal use script'
+
+
 client_secret = [client_secret]
+
+
 user_agent = [user_agent] - manually define `user_agent' using the Reddit application documentation:
 
 Example:
