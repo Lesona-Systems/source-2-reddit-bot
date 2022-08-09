@@ -1,7 +1,15 @@
 # source-2-reddit-bot
-Monitors reddit.com/r/globaloffensive and returns the first instance of a post with "Source 2" or "source 2" in its title and emails the post title and its URL to the given email address. Currently running on a RaspberryPi B+. 
+Monitors reddit.com/r/globaloffensive and returns the first instance of a post with "Source 2" or "source 2" in its title and emails the post title and its URL to the given email address.
+
+Currently running on a RaspberryPi B+. 
 
 Pull requests are welcome.
+
+**TO DO**
+
+** Document cron usage **
+** Do not send email if returned post titles are unchanged despite fulfilling if statements **
+** Return multiple post titles **
 
 ## Usage
 
