@@ -7,9 +7,9 @@ Pull requests are welcome.
 
 **TO DO**
 
-** Document cron usage **  
-** Do not send email if returned post titles are unchanged despite fulfilling if statements **  
-** Return multiple post titles **  
+**Document cron usage**  
+**Do not send email if returned post titles are unchanged despite fulfilling if statements**  
+***Return multiple post titles**  
 
 ## Usage
 
