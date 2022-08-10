@@ -21,9 +21,9 @@ It is strongly recomended to create a virtual environment prior to installation.
 
 Download latest release and run 
 
-`python -r requirements.txt` on Windows
+`pip -r requirements.txt` on Windows
 
-`python3 -r requirements.txt` on MacOS & Linux.
+`pip3 -r requirements.txt` on MacOS & Linux.
 
 ### Usage
 The PRAW module does a fantastic job of taking care of the rate limiting to avoid your bot being banned. [secrets.example.ini](secrets.example.ini) will contain all the needed tokens for the bot to run, but it does require some setup on your end.
