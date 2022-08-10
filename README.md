@@ -9,7 +9,7 @@ Pull requests are welcome.
 
 **Document cron usage**  
 **Do not send email if returned post titles are unchanged despite fulfilling if statements**  
-***Return multiple post titles**  
+**Return multiple post titles**  
 
 ## Usage
 
