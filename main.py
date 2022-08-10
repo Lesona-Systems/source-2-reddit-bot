@@ -4,6 +4,7 @@ import monitor as m
 
 def main():
     s2_post_exists = m.monitor()
+    # hacky item separation
     post_information = '    '.join([s2_post_exists[1], s2_post_exists[2]])
 
     if s2_post_exists[0] == True:

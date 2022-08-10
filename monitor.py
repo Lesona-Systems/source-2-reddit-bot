@@ -14,6 +14,5 @@ def monitor():
         if "Source 2" in post.title or "source 2" in post.title:
             url = "https://www.reddit.com" + post.permalink
             return(True, post.title, url)
-
         else:
             pass
