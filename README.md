@@ -7,6 +7,7 @@ Pull requests are welcome.
 
 **TO DO**
 
+**Implement hashing to compare previously retrieved post titles to current post titles**
 **Document cron usage**  
 **Do not send email if returned post titles are unchanged**  
 **Return multiple post titles**  
@@ -65,7 +66,7 @@ There are two fields that need to be filled out for the Gmail dictionary in `sec
 In `secrets.ini` ['gmail']['email'], enter the email address from which you want to send the alert.
 
 ##### Gmail App Password
-Gmail has retired the "Use Less Secure Apps", meaning that in order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password.
+Gmail has retired the "Use Less Secure Apps". This means that that in order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password.
 
 These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once genereated.
 
