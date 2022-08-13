@@ -1,7 +1,7 @@
 import sys
 import hashlib
 
-def hashfile(first_file, second_file):
+def hashfile(file):
     BUF_SIZE = 65536
     sha256 = hashlib.sha256()
 

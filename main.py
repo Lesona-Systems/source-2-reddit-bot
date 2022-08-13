@@ -1,6 +1,7 @@
 import smtplib
 import email_alert as email
 import monitor as m
+import checksum
 
 def main():
     s2_post_exists = m.monitor()
