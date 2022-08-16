@@ -1,20 +1,12 @@
 # source-2-reddit-bot
-Monitors reddit.com/r/globaloffensive and returns the first instance of a post with "Source 2" or "source 2" in its title and emails the post title and its URL to the given email address.
 
-Currently running on a RaspberryPi B+. 
+Monitors new posts in the [Counter-Strike: Global Offensive subreddit](www.reddit.com/r/globaloffensive/new) and returns the any posts with "Source 2" or "source 2" in its title and emails the post title and the post URL to the provided Gmail email address.
 
 Pull requests are welcome.
 
 **TO DO**
 
-**Implement hashing to compare previously retrieved post titles to current post titles**
-**Document cron usage**  
-**Do not send email if returned post titles are unchanged**  
-**Return multiple post titles**  
-
-## Usage
-
-Personal project for gaining experience in scraping Reddit (using PRAW) to look for mentions of "Source 2" in /r/GlobalOffensive's "New" catagory. Unfinished.
+**Document cron usage**
 
 ### Installation
 
@@ -27,10 +19,10 @@ Download latest release and run
 `pip3 -r requirements.txt` on MacOS & Linux.
 
 ### Usage
-The PRAW module does a fantastic job of taking care of the rate limiting to avoid your bot being banned. [secrets.example.ini](secrets.example.ini) will contain all the needed tokens for the bot to run, but it does require some setup on your end.
+The [PRAW Python module](https://pypi.org/project/praw/] takes care of the rate limiting to avoid the bot being banned. [secrets.example.ini](secrets.example.ini) contains all the needed tokens for the bot to run as per directions below.
 
 #### Reddit API Secrets
-This is a read-only bot, meaning that we'll need fewer tokens than if the bot was reading/replying to comments. Regardless, users will need to create a Reddit application for the PRAW instance to use:
+This is a read-only bot. Users will need to create a Reddit application for the PRAW instance to use:
 
 Register a new Reddit application [here](https://www.reddit.com/prefs/apps/).
 
@@ -45,11 +37,9 @@ Once the bot has been registered, create a `secrets.ini` file in the project roo
 
 Under `[reddit]` in secrets.ini, enter the following information:
 
-`client_id = [client_id]` - located under `personal use script`
-
+`client_id = [client_id]` - located under `personal use script` on the Reddit bot page.
 
 `client_secret = [client_secret]`
-
 
 `user_agent = [user_agent]` - manually define `user_agent` using the Reddit application documentation:
 
@@ -61,13 +51,11 @@ See [Reddit App](https://github.com/reddit-archive/reddit/wiki/API#rules) docume
 #### Gmail Secrets
 
 ##### Gmail Email
-There are two fields that need to be filled out for the Gmail dictionary in `secrets.ini`. First is the email address you want the emails to come from. 
+There are variables that need to be present under the Gmail header in `secrets.ini`. First is the email address you want the emails to come from. 
 
 In `secrets.ini` ['gmail']['email'], enter the email address from which you want to send the alert.
 
 ##### Gmail App Password
-Gmail has retired the "Use Less Secure Apps". This means that that in order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password.
-
-These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once genereated.
+Gmail has retired the "Use Less Secure Apps". In order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password.These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once created.
 
 Follow this [link](https://myaccount.google.com/apppasswords) to name the app and generate your app password. Place generated app password in `secrets.ini` under `email_pass`.
