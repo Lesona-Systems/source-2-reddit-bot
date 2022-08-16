@@ -11,7 +11,7 @@ def email_alert(mail_content):
     # construct message object
     message = MIMEMultipart()
     message['From'] = sender_address
-    message['To'] = receiver_address
+    message['To'] = recipient_address
     message['Subject'] = 'New Source 2 Post in /r/globaloffensive'
 
     # The body and the attachments for the mail
@@ -20,7 +20,7 @@ def email_alert(mail_content):
     # Create SMTP session to send the email
     session = smtplib.SMTP('smtp.gmail.com', 587)
 
-    session.starttls() # enable security
+    session.starttls() # upgrade session to SSL
     session.login(sender_address, sender_pass)
 
     # format message as string, pass to session & send email

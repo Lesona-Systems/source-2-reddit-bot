@@ -10,7 +10,6 @@ def monitor():
     )
 
     for post in reddit.subreddit('globaloffensive').new():
-        post_items = []
         if "Source 2" in post.title or "source 2" in post.title:
             url = "https://www.reddit.com" + post.permalink
             return(True, post.title, url)
