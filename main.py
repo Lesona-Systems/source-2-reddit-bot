@@ -25,4 +25,5 @@ def main():
         e.email_alert(content)
         print('Success...')
 
-main()
+if __name__ == '__main__':
+    main()
