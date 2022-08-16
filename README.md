@@ -70,4 +70,3 @@ Gmail has retired the "Use Less Secure Apps", meaning that in order to send emai
 These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once genereated.
 
 Follow this [link](https://myaccount.google.com/apppasswords) to name the app and generate your app password. Place generated app password in `secrets.ini` under `email_pass`.
-
