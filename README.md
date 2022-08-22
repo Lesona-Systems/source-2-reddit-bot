@@ -19,7 +19,7 @@ Download latest release and run
 `pip3 -r requirements.txt` on MacOS & Linux.
 
 ### Usage
-The [PRAW Python module](https://pypi.org/project/praw/) takes care of the rate limiting to avoid the bot being banned. [secrets.example.ini](secrets.example.ini) contains all the needed tokens for the bot to run as per directions below.
+The [PRAW Python module](https://pypi.org/project/praw/) takes care of the rate limiting to avoid the bot being banned. [secrets.example.ini](secrets.example.ini) contains examples of needed tokens for the bot to run as per directions below.
 
 #### Reddit API Secrets
 This is a read-only bot. Users will need to create a Reddit application for the PRAW instance to use:
