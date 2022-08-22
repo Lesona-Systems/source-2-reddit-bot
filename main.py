@@ -27,6 +27,7 @@ def main():
             print('Success...')
     else:
         print('No Source 2 posts in /r/GlobalOffensive/new')
+        quit()
 
 if __name__ == '__main__':
     main()
