@@ -46,7 +46,7 @@ Under `[reddit]` in secrets.ini, enter the following information:
 Example:
 ``` <platform>:<app ID>:<version string> (by /u/<reddit username>)```
 
-See [Reddit App](https://github.com/reddit-archive/reddit/wiki/API#rules) documentation for more information.
+See [Reddit App/API](https://github.com/reddit-archive/reddit/wiki/API#rules) documentation for more information.
 
 #### Gmail Secrets
 
