@@ -5,7 +5,7 @@ import checksum as c
 
 def main():
     new_csgo_posts = m.get_new_posts()
-    if len(new_csgo_posts) > 0:
+    if new_csgo_posts:
         new_csgo_strings = '\n'.join(new_csgo_posts)
         f = open('new_csgo_posts.txt', 'w+')
         f.write(new_csgo_strings)
