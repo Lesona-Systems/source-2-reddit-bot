@@ -6,7 +6,7 @@ Pull requests are welcome.
 
 **TO DO**
 
-**Document cron usage**
+** - Document cron usage**
 
 ### Installation
 
