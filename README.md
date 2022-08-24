@@ -4,9 +4,9 @@ Monitors new posts in the [Counter-Strike: Global Offensive subreddit](www.reddi
 
 Pull requests are welcome.
 
-**TO DO**
+# TODO
 
-** - Document cron usage**
+- Document cron usage
 
 ### Installation
 
