@@ -5,4 +5,7 @@ secrets.ini
 /__pycahche__
 *.cpython-310.pyc
 
+new_csgo_posts.txt
+old_csgo_posts.txt
+
 README.md

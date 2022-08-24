@@ -1,10 +1,17 @@
-import smtplib
+from pathlib import Path
 import email_alert as e
 import monitor as m
 from checksum import checksum
 
 def main():
     new_csgo_posts = m.get_new_posts()
+
+    f = Path('old_csgo_posts.txt')
+    if f.is_file():
+        pass
+    else:
+        f = open(f, 'w')
+        f.close()
 
     if new_csgo_posts:
         new_csgo_strings = '\n'.join(new_csgo_posts)

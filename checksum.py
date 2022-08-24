@@ -1,4 +1,4 @@
-import sys
+# import sys
 import hashlib
 
 def checksum(file1, file2):
