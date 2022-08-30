@@ -15,8 +15,7 @@ def get_new_posts():
     for post in reddit.subreddit('globaloffensive').new():
         if "Source 2" in post.title or "source 2" in post.title:
             url = "https://www.reddit.com" + post.permalink
-            post_entry = [post.title, url]
-            post_entry = '  '.join(post_entry)
+            post_entry = f'<a href="{url}">{post.title}</a>'
             post_entries.append(post_entry)
         else:
             pass

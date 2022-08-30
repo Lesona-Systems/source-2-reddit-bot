@@ -16,7 +16,7 @@ def email_alert(mail_content):
     message['Subject'] = 'New Source 2 Post in /r/globaloffensive'
 
     # create body and the attachments for the mail
-    message.attach(MIMEText(mail_content, 'plain'))
+    message.attach(MIMEText(mail_content, 'html'))
 
     # Create SMTP session to send the email
     session = smtplib.SMTP('smtp.gmail.com', 587)
