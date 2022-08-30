@@ -23,7 +23,7 @@ def main():
     # hash and compare old_csgo_posts.txt and new_csgo_posts.txt.
     # if hashes match, quit.
         if checksum('old_csgo_posts.txt', 'new_csgo_posts.txt'):
-            print('No NEW Source 2 posts in /r/GlobalOffensive/new \n Quitting....')
+            print('No new Source 2 posts in /r/GlobalOffensive/new -- Quitting....')
             quit()
     # if hashes DO NOT match, email the alert and write posts to file for next run hash comparison
         else:
@@ -32,7 +32,7 @@ def main():
             print('Success...')
     # if criteria isn't met, tell user and quit
     else:
-        print('No Source 2 posts in /r/GlobalOffensive/new \n Quitting....')
+        print('No Source 2 posts in /r/GlobalOffensive/new -- Quitting....')
         quit()
 
 def write_file(file, content):
