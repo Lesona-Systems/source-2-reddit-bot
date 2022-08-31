@@ -12,7 +12,7 @@ Pull requests are welcome.
 
 It is strongly recomended to create a virtual environment prior to installation. For further information, please refer to the [Python documentation](https://docs.python.org/3/library/venv.html).
 
-Download latest release and run 
+Clone the repository, create your virtual environment, and run:
 
 `pip -r requirements.txt` on Windows
 
@@ -56,6 +56,6 @@ There are variables that need to be present under the Gmail header in `secrets.i
 In `secrets.ini` ['gmail']['email'], enter the email address from which you want to send the alert.
 
 ##### Gmail App Password
-Gmail has retired the "Use Less Secure Apps". In order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password.These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once created.
+Gmail has retired the "Use Less Secure Apps". In order to send emails from a Gmail account with two-factor authentication enabled, users must generate an app password. These application passwords bypass two-factor authentication and cannot be retrieved once they are generated, so be sure to copy it once created.
 
 Follow this [link](https://myaccount.google.com/apppasswords) to name the app and generate your app password. Place generated app password in `secrets.ini` under `email_pass`.
