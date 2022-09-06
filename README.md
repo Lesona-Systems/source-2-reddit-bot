@@ -12,11 +12,9 @@ Pull requests are welcome.
 
 It is strongly recomended to create a virtual environment prior to installation. For further information, please refer to the [Python documentation](https://docs.python.org/3/library/venv.html).
 
-Clone the repository, create your virtual environment, and run:
+Clone the repository, create & activate your virtual environment, and run:
 
-`pip -r requirements.txt` on Windows
-
-`pip3 -r requirements.txt` on MacOS & Linux.
+`pip -r requirements.txt`
 
 ## Usage
 The [PRAW Python module](https://pypi.org/project/praw/) takes care of the rate limiting to avoid the bot being banned. [secrets.example.ini](secrets.example.ini) contains examples of needed tokens for the bot to run as per directions below.
